@@ -23,7 +23,7 @@ function addTask(e) {
     //create li inside ul
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(taskInput.value + ""));
-    taskList.appendChild("li");
+    taskList.appendChild(li);
     let link = document.createElement("a");
     link.setAttribute("href", "#");
     link.innerHTML = "x";
