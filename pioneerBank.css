@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home-page {
+  display: block;
+}
+
+.submit-page {
+  box-shadow: 5px 5px 10px gray;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#home-page h4 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* transaction area CSS here  */
+#transaction-area {
+  display: none;
+}
+
+.status {
+  margin-top: 200px;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+.deposit-area {
+  background: orange;
+}
+
+.withdraw-area {
+  background: lightblue;
+}
+
+.balance-area {
+  background: olivedrab;
+}
