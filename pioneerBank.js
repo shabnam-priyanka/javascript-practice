@@ -12,45 +12,51 @@ submitBtn.addEventListener("click", function () {
 const depositBtn = document.getElementById("deposit-btn");
 depositBtn.addEventListener("click", function () {
   // console.log(depositBtn);
-  const depositAmount = document.getElementById("depositAmount").value;
-  const depositNumber = parseFloat(depositAmount);
 
-  const currentDeposit = document.getElementById("currentDeposit").innerText;
-  const currentDepositNumber = parseFloat(currentDeposit);
-  const totalDeposit = depositNumber + currentDepositNumber;
+  const depositNumber = getInputNumber("depositAmount");
+  // const depositAmount = document.getElementById("depositAmount").value;
+  // const depositNumber = parseFloat(depositAmount);
 
-  document.getElementById("currentDeposit").innerText = totalDeposit;
+  // const currentDeposit = document.getElementById("currentDeposit").innerText;
+  // const currentDepositNumber = parseFloat(currentDeposit);
+  // const totalDeposit = depositNumber + currentDepositNumber;
+
+  //document.getElementById("currentDeposit").innerText = totalDeposit;
   // above we worked with deposit h1 tag and deposit input box so that the deposit amount adds up
-  const currentBalance = document.getElementById("currentBalance").innerText;
-  const currentBalanceNumber = parseFloat(currentBalance);
-  const totalBalance = depositNumber + currentBalanceNumber;
+  // const currentBalance = document.getElementById("currentBalance").innerText;
+  // const currentBalanceNumber = parseFloat(currentBalance);
+  // const totalBalance = depositNumber + currentBalanceNumber;
 
-  document.getElementById("currentBalance").innerText = totalBalance;
+  //document.getElementById("currentBalance").innerText = totalBalance;
   // below we will work with when we input number in deposit that should add in balance too
-  document.getElementById("depositAmount").value = "";
 
-  // updateSpanText('currentDeposit', depositNumber);
-  // updateSpanText('currentBalance', depositNumber);
+  updateSpanText("currentDeposit", depositNumber);
+  updateSpanText("currentBalance", depositNumber);
+
+  document.getElementById("depositAmount").value = "";
 });
 
-//function for deposit button
-// function updateSpanText(id, depositNumber) {
-//   const currentBalance = document.getElementById(id).innerText;
-//   const currentBalanceNumber = parseFloat(currentBalance);
-//   const totalBalance = depositNumber + currentBalanceNumber;
-//   document.getElementById(id).innerText = totalBalance;
-// }
+// function for deposit button
+function updateSpanText(id, depositNumber) {
+  const currentBalance = document.getElementById(id).innerText;
+  const currentBalanceNumber = parseFloat(currentBalance);
+  const totalBalance = depositNumber + currentBalanceNumber;
+  document.getElementById(id).innerText = totalBalance;
+}
 
 //withdraw button event handler
 
 const withdrawBtn = document.getElementById("withdrawBtn");
 withdrawBtn.addEventListener("click", function () {
   const withdrawNumber = getInputNumber("withdrawAmount");
-  console.log(withdrawNumber);
+  updateSpanText("currentWithdraw", withdrawNumber);
+  updateSpanText("currentBalance", -1 * withdrawNumber);
+
+  document.getElementById("withdrawAmount").value = "";
 });
-//function for withdraw btn
+//function for withdraw and deposit input box btn
 function getInputNumber(id) {
-  const withdrawAmount = document.getElementById(id).value;
-  const withdrawNumber = parseFloat(withdrawAmount);
-  return withdrawNumber;
+  const amount = document.getElementById(id).value;
+  const amountNumber = parseFloat(amount);
+  return amountNumber; // ei khan e return korse ken :(
 }
