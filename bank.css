@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home-page {
+  display: block;
+}
+.submit-form {
+  padding: 40px;
+  box-shadow: 5px 5px 10px orange;
+}
+#transaction-area {
+  display: none;
+}
+.deposit {
+  background: orange;
+}
+.withdraw {
+  background: rgb(226, 58, 7);
+}
+
+.balance {
+  background: rgb(124, 241, 124);
+}
+.money {
+  margin-top: 150px;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
