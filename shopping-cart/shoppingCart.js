@@ -1,12 +1,14 @@
-//Phone event handler
+//Phone event handler starts
+// function handlePhoneChange() {}
 
+// below long way doing code
 const phoneDecrease = document.getElementById("phoneDecrease");
 phoneDecrease.addEventListener("click", function () {
   const getInputNumber = document.getElementById("phoneInput").value;
   const input = parseInt(getInputNumber);
-  const phoneMinus = input - 1;
-  document.getElementById("phoneInput").value = phoneMinus;
-  const totalPhone = phoneMinus * 1200;
+  const phoneCount = input - 1;
+  document.getElementById("phoneInput").value = phoneCount;
+  const totalPhone = phoneCount * 1200;
   document.getElementById("phonePrice").innerText = "$" + totalPhone;
 });
 
@@ -19,6 +21,8 @@ phoneIncrease.addEventListener("click", function () {
   const totalPhone = phonePlus * 1200;
   document.getElementById("phonePrice").innerText = "$" + totalPhone;
 });
+
+//Phone event handler ends
 
 //  CASE event handler ******************************************************************
 
