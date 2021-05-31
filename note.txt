@@ -1,0 +1,72 @@
+
+Module 11 - 26 practice May 30, 2021
+
+Module-11
+5 types of data types
+
+1. number type var a = 10;
+2. string type "";
+3. boolean type = true, false. var isRunning = true or false
+4. array = ['iam','shab','fam'];
+5. object
+var obj = {
+    name: 'shabnz'
+    age: 90;
+    phone: 5777777777;
+}
+
+-these are also data type 
+undefined
+empty value
+null
+NaN
+
+
+Module-12
+var str = 'something' this is literal string
+var str2 = String('something'); this is called string constructor
+
+
+charAt kon string e koto number position e string ase ber korar jonno charAt
+
+- trim cuts down extra space if the user puts
+
+- split method ("") will separate word and show you letter
+
+- boolean data type  by default is true
+*undefined data type shows false
+*null shows false
+*NaN boolean data type will be false
+
+var a;
+console.log(typeof a); it will return undefined
+console.log(a == undefined);true or false value
+console.log(a === undefined);true or false value
+
+//null 
+var a = null;
+console.log(typeof a); will return object
+console.log(a  == null); will truthy data
+console.log(null == undefined); truthy data will return
+console.log(null === undefined); will return falsy value
+
+var b = ''; 
+console.log(typeof b); this will return empty string
+
+
+-Array 
+*if there is no such item in an aray then it will show undefined
+
+
+-join to show array string use join(' ') space in string will show full sentance
+
+
+-premitive data type = number, srring, boolean data type  - deals with value
+-reference data type = array, object - deals with address
+
+- what is control flow?
+if, else if, else 
+
+
+-condition
+
