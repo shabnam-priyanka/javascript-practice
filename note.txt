@@ -65,8 +65,30 @@ console.log(typeof b); this will return empty string
 -reference data type = array, object - deals with address
 
 - what is control flow?
+-condition
 if, else if, else 
 
 
--condition
 
+
+-what is array traversing
+loop er vitor iteration k array traversing 
+
+
+
+-function 2 types 
+*build in function
+-alert
+-prompt
+etc
+
+*user define Function
+
+
+function saySomething(){
+    -body
+}
+
+you have to declare function name in order to shows
+like 
+saySomething()
