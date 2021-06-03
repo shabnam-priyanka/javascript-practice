@@ -12,31 +12,40 @@
     <p id="demo"></p>
     <script>
         var day = prompt();
-        switch (new Date().getDay()) {
+        var text;
+        switch (day) {
             case 0:
-                day = "Sunday";
+                text = "Sunday";
+                console.log('today is not working');
                 break;
             case 1:
-                day = "Monday";
+                text = "Monday";
+                console.log('');
                 break;
             case 2:
-                day = "Tuesday";
+                text = "Tuesday";
+                console.log('');
                 break;
             case 3:
-                day = "Wednesday";
+                text = "Wednesday";
+                console.log('');
                 break;
             case 4:
-                day = "Thursday";
+                text = "Thursday";
+                console.log('');
                 break;
             case 5:
-                day = "Friday";
+                text = "Friday";
+                console.log('');
                 break;
             case 6:
-                day = "Saturday";
+                text = "Saturday";
+                console.log('');
         }
-        document.getElementById("demo").innerHTML = "Today is " + day;
+
+        document.getElementById("demo").innerHTML = "Today is " + text;
     </script>
-    </script>
+    <!-- <script src="switch.js"></script> -->
 </body>
 
 </html>

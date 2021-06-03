@@ -92,3 +92,24 @@ function saySomething(){
 you have to declare function name in order to shows
 like 
 saySomething()
+
+
+-normal function 
+function saySomething(){
+
+}
+
+- Function expression
+let saySomething = function(){
+
+}
+
+-arrow function 
+let saySomething = () => {
+    console.log()
+}
+
+-array iteration using foreach
+
+- Javascript e object er vitor tar property e value hisebe
+ function declare korle take method bole

@@ -33,22 +33,22 @@
 // }
 
 //*************************** */
-// var choice1 = prompt();
-// var text1;
-// switch (choice1) {
-//   case "a":
-//     text1 = "you have selected option 1";
-//     break;
+var choice1 = prompt();
+var text1;
+switch (choice1) {
+  case "a":
+    text1 = "you have selected option 1";
+    break;
 
-//   case "b":
-//     text1 = "you have choose b";
-//     break;
+  case "b":
+    text1 = "you have choose b";
+    break;
 
-//   case "c":
-//     text1 = "u have choose c";
-//     break;
-// }
-// console.log(text1); //not working
+  case "c":
+    text1 = "u have choose c";
+    break;
+}
+console.log(text1); //not working
 
 // switch (7) {
 //   case 1:
@@ -77,7 +77,7 @@
 
 //   default:
 //     console.log("not a valid number");
-// } //this is working
+// }
 
 // var num = 20;
 // switch (num) {
@@ -95,14 +95,14 @@
 //     console.log("you fail");
 // }
 
-var num = 99;
-switch (num) {
-  case num <= 100 && num >= 90:
-    console.log("you got A+ yaaaay");
-    break;
-  case num <= 90 && num >= 80:
-    console.log("u got A yaaay");
-    break;
-  case num <= 80 && num >= 70:
-    console.log("you got b boooo");
-}
+// var num = 99;
+// switch (num) {
+//   case num <= 100 && num >= 90:
+//     console.log("you got A+ yaaaay");
+//     break;
+//   case num <= 90 && num >= 80:
+//     console.log("u got A yaaay");
+//     break;
+//   case num <= 80 && num >= 70:
+//     console.log("you got b boooo");
+// }
